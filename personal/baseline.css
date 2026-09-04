@@ -1,0 +1,132 @@
+/*============== Layers ==============*/
+
+
+
+/*============== Variables ==============*/
+
+:root {
+    --color_1: #FF0000;
+    --outline: 2px;
+}
+
+/*============== ID ==============*/
+
+#baseid {
+    font-size: 48px;
+}
+
+/*============== Classes ==============*/
+
+.baseclass {
+    font-family: Arial;
+}
+
+/*============== Tags ==============*/
+
+h1 {
+    background-color: var(--color_1);
+    outline-color: black;
+    outline-width: var(--outline);
+    outline-style: solid;
+}
+
+p {
+    background-color: green;
+    outline-color: black;
+    outline-width: 4px;
+    outline-style: solid;
+    cursor: grab;
+}
+
+/*======================== CSS Tag Reference Sheet ========================
+                           v0 . 08.27.2026 . 12.43
+                           Created by Kyle Bennett
+
+A
+--
+
+B
+background-color | Defines color behind item.
+
+C
+cursor | Allows you to change what your cursor looks like when hovering over said item.
+
+D
+display | Allows special display features. Inline removes automatic enter. Block forces automatic enter.
+
+E
+--
+
+F
+font-family | Defines text font.
+font-size | Defines text scale.
+font-weight | Defines text boldness.
+
+G
+--
+
+H
+--
+
+I
+--
+
+J
+--
+
+K
+--
+
+L
+line-height | Line margin.
+
+M
+margin | Defines margin scale. ALL SIDES.
+margin-bottom | Defines margin scale, for the bottom side.
+margin-left | Defines margin scale, for the left side.
+margin-right | Defines margin scale, for the right side.
+margin-top | Defines margin scale, for the top side.
+
+N
+--
+
+O
+outline-color | Defines outline color.
+outline-style | Defines outline type.
+outline-width | Defines outline scale.
+
+P
+padding
+
+Q
+--
+
+R
+--
+
+S
+--
+
+T
+text-align | Defines screen alignment (left, center, right)
+text-decoration | Allows underline, overline, etc.
+
+U
+--
+
+V
+--
+
+W
+--
+
+X
+--
+
+Y
+--
+
+Z
+--
+
+======================== End of Reference Sheet ========================*/

@@ -1,7 +1,7 @@
  <!-- 
-    Website Template
+    HTML Website Template
     Created by Kyle Bennett
-    Last update: 8/25/26
+    v0 . 08.27.2026 . 12.32
  -->
 
 <!DOCTYPE html> <!-- Required definer -->
@@ -11,13 +11,17 @@
 
             <meta charset="UTF-8"> <!-- Metadata -->
             <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Metadata -->
+            <link rel="stylesheet" href="baseline.css"> <!-- CSS Link -->
             <title>Baseline</title> <!-- Defines page title -->
+            
+            <script src="baseline.js"></script>
 
         </head>
         <body> <!-- Site Data -->
             
-            <h2>This is a header.</h2>
-            <p>This is a sentence.</p>
+            <h1 class="baseclass">This is a header.</h1>
+            <p id="baseid">This is a sentence.</p>
+            <p onclick="name">Alert</p>
 
         </body>
 
@@ -32,6 +36,8 @@
 <br> / Break
 <div> / Divider Tag; does nothing directly, but can act as a CSS styling container.
     <???> / Anything not directly defined in html tags becomes a div tag. <footer> <header> <nav> are not tags with any info tied to them, so they act as div tags.
-<
+<ul> / Unordered List Tag, Contains <li>'s
+    <li> / List Item Tag
+    <ol> / Ordered List Tag Variant
 
     End: -->
