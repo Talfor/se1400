@@ -1,7 +1,7 @@
  <!-- 
-    HTML Website Template
-    Created by Kyle Bennett
-    v0 . 08.27.2026 . 12.32
+    HTML / CSS / JS Website Template
+    Created by Talfor
+    v0 . 09.10.2026 . 12.45
  -->
 
 <!DOCTYPE html> <!-- Required definer -->
@@ -14,14 +14,32 @@
             <link rel="stylesheet" href="baseline.css"> <!-- CSS Link -->
             <title>Baseline</title> <!-- Defines page title -->
             
-            <script src="baseline.js"></script>
+            <script src="baseline.js" defer></script>
 
         </head>
         <body> <!-- Site Data -->
             
             <h1 class="baseclass">This is a header.</h1>
             <p id="baseid">This is a sentence.</p>
-            <p onclick="name">Alert</p>
+            <p onclick="name()">Alert</p>
+
+            <nav>
+                <ul>
+                    <li>Pets
+                        <ul>
+                            <li>Cat</li>
+                            <li>Dog</li>
+                            <li>Bird</li>
+                        </ul>
+                    </li>
+                    <li>Numbers
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
         </body>
 
@@ -31,7 +49,8 @@
 
 <p> / Paragraph
 <h1> - <h6> / Header
-<b> / Bold
+<b> / Bold, can also use <strong>
+<i> / Italic, can also use <em>
 <hr> / Break with Line
 <br> / Break
 <div> / Divider Tag; does nothing directly, but can act as a CSS styling container.
@@ -39,5 +58,14 @@
 <ul> / Unordered List Tag, Contains <li>'s
     <li> / List Item Tag
     <ol> / Ordered List Tag Variant
+<table> / HTML5 Table
+    <tr> / Table Row
+        <th> / Table Heading Slot
+        <td> / Data Cell
+<sub> / Subscript
+<sup> / Superscript
+<pre> / Preformatted
+<link rel="preconnect" href="LINK"> / Embed a Font
+<a href="LINK"> / Embed a Link
 
     End: -->

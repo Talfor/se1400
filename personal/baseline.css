@@ -38,21 +38,31 @@ p {
     cursor: grab;
 }
 
+nav>ul>li>ul {
+    display:none;
+}
+
+nav>ul>li:hover>ul {
+    display:block;
+}
+
 /*======================== CSS Tag Reference Sheet ========================
-                           v0 . 08.27.2026 . 12.43
-                           Created by Kyle Bennett
+                           Created by Talfor
 
 A
---
+align-content | Aligns items.
 
 B
 background-color | Defines color behind item.
 
 C
 cursor | Allows you to change what your cursor looks like when hovering over said item.
+column-count | How many columns a paragraph forms.
+column-gap | How far each column is from one another.
+column-rule | Special rules columns follow.
 
 D
-display | Allows special display features. Inline removes automatic enter. Block forces automatic enter.
+display | Allows special display features. Inline removes automatic enter and block padding. Block forces automatic enter.
 
 E
 --
@@ -60,7 +70,12 @@ E
 F
 font-family | Defines text font.
 font-size | Defines text scale.
-font-weight | Defines text boldness.
+font-style | Defines special text parameters. Normal is normal.
+font-weight | Defines text boldness. Often use numbers, but primarily uses "bold".
+flex | Modifiers for alignment.
+flex-direction | Defines how an adjusted screen interacts.
+flex-grow | Defines scale ratio. Four items would mean that Flex-Grow of 2 would make the item half the screen, etc.
+flex-wrap | Defines how an adjusted screen wraps.
 
 G
 --
@@ -72,7 +87,7 @@ I
 --
 
 J
---
+justify-content | Special modifers to allow content to have special space or flex interactions.
 
 K
 --
@@ -94,6 +109,7 @@ O
 outline-color | Defines outline color.
 outline-style | Defines outline type.
 outline-width | Defines outline scale.
+order | In what order an item appears. Works for child elements.
 
 P
 padding
@@ -128,5 +144,13 @@ Y
 
 Z
 --
+
+:
+:active | Being Clicked
+:focus | Keyboard Selected
+:hover | Mouse Over
+:link | Unvisted
+:visited | Visited
+
 
 ======================== End of Reference Sheet ========================*/
