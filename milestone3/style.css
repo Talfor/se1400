@@ -1,3 +1,9 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
 body { 
     font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
 
@@ -10,19 +16,77 @@ section {
 h1, h2 { 
     color: #333; }
     
-ul { 
-    list-style: none; padding: 0; }
-ul li { 
-    margin: 5px 0; }
-ul li a { 
-    color: #026c99; text-decoration: none; font-weight: bold; }
-ul li a:hover { 
-    text-decoration: underline; }
+.modlist {
+    list-style-type: none;
+    padding-left:0;
+}
+
+.modlist li {
+    outline-style: solid;
+    outline-color: black;
+    padding:1%;
+    background-color: #010945;
+    color:white;
+    font-size:75%;
+    font-family: Impact;
+    font-style: bold;
+    letter-spacing: 1px;
+    
+    display:flex;
+}
+.modlist li:hover {
+    background-color: #046fa9;
+    color:black;
+    cursor: pointer;
+}
+
+.modDescription {
+    flex:1;
+}
+
+.modlogo {
+    width:11%;
+    height:11%;
+    vertical-align: middle;
+    outline-style: solid;
+    outline-color: black;
+    margin-right:2%;
+}
+.modlogo:hover {
+    filter:brightness(125%);
+}
 
 footer { 
     text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
 
 a { 
-    break-after: avoid; margin: 40px; text-decoration: none; color: black;  display:inline;}
+    break-after: avoid; 
+    width:20%;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-decoration: none; 
+    color: black;  
+    display:inline-block;
+    border-color:black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: navajowhite;
+}
 a:hover { 
-    color:white; background-color: darkblue;}
+    color:white; 
+    background-color: darkblue;
+}
+
+.logo {
+    width:86px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+header {
+    background-image: url("/images/eclipsebackground.jpg");
+}
