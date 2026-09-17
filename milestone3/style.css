@@ -1,8 +1,50 @@
+:root {
+    --outlinescale: 1%;
+}
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 
+#featured .modlist li {
+    position: relative;
+    padding:1% 2% 25% 2%;
+    overflow: hidden; 
+    background: none;
+    z-index: 0; 
+    color:gray;
+    font-size: 150%;
+    text-shadow: 
+       -2px -2px 0 #000,  
+        2px -2px 0 #000,
+       -2px  2px 0 #000,
+        2px  2px 0 #000;
+}
+#featured .modlogo {
+    position: absolute;
+    width:100%;
+    height: auto;
+    top:0;
+    left:0;
+    z-index: -1; 
+}
+#featured .modlist li:hover {
+    color:white;
+}
+
+.featuredDescription {
+    position: absolute;
+    font-size:75%;
+    font-family: Courier;
+    text-shadow: 
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
+    color:lightgray;
+}
 
 body { 
     font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
@@ -39,6 +81,9 @@ h1, h2 {
     color:black;
     cursor: pointer;
 }
+.modlist a {
+    text-decoration: none;
+}
 
 .modDescription {
     flex:1;
@@ -52,14 +97,11 @@ h1, h2 {
     outline-color: black;
     margin-right:2%;
 }
-.modlogo:hover {
-    filter:brightness(125%);
-}
 
 footer { 
     text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
 
-a { 
+nav a { 
     break-after: avoid; 
     width:20%;
     padding-top:5px;
@@ -72,7 +114,7 @@ a {
     border-style: solid;
     background-color: navajowhite;
 }
-a:hover { 
+nav a:hover { 
     color:white; 
     background-color: darkblue;
 }
@@ -89,4 +131,5 @@ a:hover {
 
 header {
     background-image: url("/images/eclipsebackground.jpg");
+    background-size: 100%;
 }
