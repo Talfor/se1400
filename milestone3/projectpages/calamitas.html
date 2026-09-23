@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Krameri Studios</title>
+    <link rel="icon" type="image/x-icon" href="/images/KrameriStudiosLogo.ico">
     <link rel="stylesheet" href="/milestone3/style.css"> <!-- CSS Link -->
     <script src="/milestone3/java.js" defer></script> <!-- JS Link -->
 </head>
@@ -90,9 +91,9 @@
     <section id="banner" style="background-image: url('/images/cragsbackground.png')">
         <h2>The Brimstone Witch, Supreme Calamitas</h2>
         <p class="span2">
-            Minecraft/Terraria Calamity Boss Mod<br>
+            <i>Minecraft/Terraria Calamity Boss Mod</i><br><br>
             A high end Minecraft boss fight mod that adds the final boss of Terraria Calamity: Supreme Calamitas.<br>
-            This mod is designed to perfectly match the original fight. You can use the Terraria Calamity Wiki to see everything she does.<br>
+            This mod is designed to perfectly match the original fight. You can use the <a href="https://calamitymod.wiki.gg/wiki/Supreme_Witch,_Calamitas">Terraria Calamity Wiki</a> to see everything she does.<br>
             Includes the Brimstone Crags, unique ores and weapons, and drops from the boss. You can also choose difficulty upon summoning her.<br>
             <br>Disclaimer: Understand I do not support the controversial creator we have been forced to face right now. This mod is not made for him, but in respect for the other creators who have faced difficulty because of him.<br><br>
             2nd Disclaimer: I am not an artist. The models, though my work, are not going to be crazy exceptional. Also, a lot of assets are taken from Calamity. I do intend to remake them as my own work eventually. Credit to the Calamity team for said assets & concepts.<br><br>
@@ -125,20 +126,18 @@
         <p>Download the .jar file and place it into your mods folder after installing Neoforge 26.1.2 for Minecraft.</p>
         Version:
         <select name="version" id="version">
-            <!-- The first option acts as a placeholder -->
-            <option value="" disabled selected>Select an option...</option>
-            <option value="3/17/009/2">v0.0.22.5-77</option>
-            <option value="3/17/009/2">v0.0.22.5-32</option>
-            <option value="3/17/009/2">v0.0.22.5-0</option>
-            <option value="3/17/009/2">v0.0.22.4-12</option>
-            <option value="3/17/009/2">v0.0.22.3-0</option>
-        </select> - <a id="download-button" href="milestone3\projectpages\primascape.html" download="primascape.txt">⬇️</a>
+    <option value="" disabled selected>Select an option...</option>             
+    <option value="v0.0.22.5-77">v0.0.22.5-77</option>             
+    <option value="v0.0.22.5-32">v0.0.22.5-32</option>       
+</select> 
+
+<a id="download-button" download="primascape.txt">⬇️</a>
     </section>
     <section id="comments">
 
         <h2>Leave a Comment</h2>
         <!-- The HTML Form -->
-        <form action="submit_comment.php" method="POST">
+        <form action="javascript:void(0);" method="POST">
             <input type="text" name="username" placeholder="Your Name" required>
             <textarea name="comment_text" rows="4" placeholder="Write your comment here..." required></textarea>
             <button type="submit">Post Comment</button>

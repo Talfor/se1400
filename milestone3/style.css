@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    background-image: url("/images/mainbackground.jpg");
+}
+
 #featured .modlist li {
     position: relative;
     padding:1% 2% 25% 2%;
@@ -46,15 +51,23 @@
 }
 
 body { 
-    font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+    font-family: Arial, 
+    sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f9; 
+    color: #333; 
+}
 
 header { 
     background: #026c99; 
-    color: white; 
-    padding: 10px 0; 
+    color: white;  
     text-align: center; 
     background-image: url("/images/eclipsebackground.jpg");
     background-size: 100%;
+    margin: 0;
+    padding: 0; 
 }
 
 section { 
@@ -143,7 +156,8 @@ nav a:hover {
     left:0;
 }
 
-#banner {
+#banner, #description {
+    background-color: black;
     background-image: url("/images/cosmicbackground.jpg");
     background-size: cover;
     color:lightcyan;
@@ -152,12 +166,14 @@ nav a:hover {
         2px -2px 0 #000,
        -2px  2px 0 #000,
         2px  2px 0 #000;
+}
+
+#banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 #banner h2 {
-    color: lightblue;
     grid-column: span 3;
 }
 
@@ -236,6 +252,12 @@ form button { padding: 10px 15px; background: #28a745; color: white; border: non
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+
+#gallery {
+    align-items: center;
+    display: flex;
+    max-width: 800px;
 }
 
 /* Position the "next button" to the right */

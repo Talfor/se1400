@@ -1,26 +1,3 @@
-fetch('/milestone3/get_comments.php')
-    .then(res => res.json())
-    .then(comments => {
-        const container = document.getElementById('comments-container');
-        if (comments.length === 0) {
-            container.innerHTML = "<p>No comments yet. Be the first!</p>";
-            return;
-        }
-        container.innerHTML = comments.map(c => `
-            <div class="comment-box">
-                <h4>${escapeHtml(c.username)} <span>on ${c.created_at}</span></h4>
-                <p>${escapeHtml(c.comment_text).replace(/\n/g, '<br>')}</p>
-            </div>
-        `).join('');
-    })
-    .catch(err => console.error('Failed to load comments:', err));
-
-function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -51,3 +28,25 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+document.getElementById('version').addEventListener('change', function() {     
+    const selectedVersion = this.value;     
+    const downloadBtn = document.getElementById('download-button');     
+    
+    // Get the path, remove trailing slashes, and extract the file name
+    const path = window.location.pathname.replace(/\/\$/, '');
+    let currentFileName = path.split('/').pop() || 'index'; 
+    
+    // Corrected .replace() by adding the second argument
+    currentFileName = currentFileName.replace('.html', '');
+         
+    if (selectedVersion) {         
+        const newFileName = `/downloads/${currentFileName}/${currentFileName}-${selectedVersion}.txt`;
+        downloadBtn.href = newFileName;         
+        downloadBtn.setAttribute('download', newFileName);    
+    } 
+    else {
+        alert("Please select an option.")
+    }
+});
