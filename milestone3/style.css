@@ -9,7 +9,7 @@
 
 body {
     background-color: black;
-    background-image: url("/images/mainbackground.jpg");
+    background-image: url("../images/mainbackground.jpg");
 }
 
 #finalBG {
