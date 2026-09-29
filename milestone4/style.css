@@ -1,0 +1,324 @@
+:root {
+    --outlinescale: 1%;
+}
+
+html {
+    background-color: black;
+    background-image: url(../images/mainbackground.jpg);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#finalBG {
+    object-fit: cover;
+    z-index: -2;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+}
+
+#featured .modlist li {
+    position: relative;
+    padding:1% 2% 25% 2%;
+    overflow: hidden; 
+    background: none;
+    z-index: 0; 
+    color:gray;
+    font-size: 150%;
+    text-shadow: 
+       -2px -2px 0 #000,  
+        2px -2px 0 #000,
+       -2px  2px 0 #000,
+        2px  2px 0 #000;
+}
+#featured .modlogo {
+    position: absolute;
+    width:100%;
+    height: auto;
+    top:0;
+    left:0;
+    z-index: -1; 
+}
+#featured .modlist li:hover {
+    color:white;
+}
+
+.featuredDescription {
+    position: absolute;
+    font-size:75%;
+    font-family: Courier;
+    text-shadow: 
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
+    color:lightgray;
+}
+
+body { 
+    font-family: Arial, 
+    sans-serif; 
+    line-height: 1.6; 
+    margin: 0 auto 0 auto; 
+    padding: 0; 
+    color: #333; 
+    max-width:60rem;
+}
+
+header { 
+    background: none; 
+    color: white;  
+    margin: 0 auto 0 auto; 
+    text-align: center; 
+    background-size: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+section { 
+    max-width: 90%; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+
+h1 {
+    text-shadow: 
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
+    font-size: clamp(1.2rem, 3vw + 0.55rem, 2rem);
+}
+
+h2 { 
+    color: #333; 
+}
+    
+.modlist {
+    list-style-type: none;
+    padding-left:0;
+}
+
+.modlist li {
+    outline-style: solid;
+    outline-color: black;
+    padding:1%;
+    background-color: #010945;
+    color:white;
+    font-size:75%;
+    font-family: Impact;
+    font-style: bold;
+    letter-spacing: 1px;
+    
+    display:flex;
+}
+.modlist li:hover {
+    background-color: #046fa9;
+    color:black;
+    cursor: pointer;
+}
+.modlist a {
+    text-decoration: none;
+}
+
+.modDescription {
+    flex:1;
+}
+
+.modlogo {
+    width:11%;
+    height:11%;
+    vertical-align: middle;
+    outline-style: solid;
+    outline-color: black;
+    margin-right:2%;
+}
+
+footer { 
+    text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; 
+    
+    margin: 0 auto 0 auto; 
+}
+
+nav a { 
+    break-after: avoid; 
+    width:20%;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-decoration: none; 
+    color: black;  
+    display:inline-block;
+    border-color:black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: navajowhite;
+}
+nav a:hover { 
+    color:white; 
+    background-color: darkblue;
+}
+
+.logo {
+    width:86px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    left:0;
+}
+
+#banner, #description {
+    background: none;
+    color:lightcyan;
+    text-shadow: 
+       -2px -2px 0 #000,  
+        2px -2px 0 #000,
+       -2px  2px 0 #000,
+        2px  2px 0 #000;
+}
+
+#description h2 {
+    color:white;
+}
+
+#banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#banner h2 {
+    grid-column: span 3;
+    color:white;
+}
+
+#banner #modlabels {
+    grid-column: span 1;
+    text-align: right;
+}
+
+#banner .span2 {
+    grid-column: span 2;
+}
+
+#download-button {
+    text-shadow: 
+       -2px -2px 0 darkblue,  
+        2px -2px 0 darkmagenta,
+       -2px  2px 0 darkmagenta,
+        2px  2px 0 darkred;
+    display: inline;
+    font-size:20px;
+    text-decoration: none;
+}
+
+#download-button:hover {
+    text-shadow: 
+       -2px -2px 0 lightcyan,  
+        2px -2px 0  cyan,
+       -2px  2px 0  cyan,
+        2px  2px 0 blue;
+    display: inline;
+    cursor: pointer;
+}
+
+#download {
+    background-color: gray;
+}
+
+.comment-box { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+.comment-box h4 { margin: 0 0 5px 0; color: #333; }
+.comment-box span { font-size: 0.8em; color: #777; }
+form input, form textarea { display: block; width: 100%; margin-bottom: 10px; padding: 8px; }
+form button { padding: 10px 15px; background: #28a745; color: white; border: none; cursor: pointer; }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#gallery {
+    align-items: center;
+    display: flex;
+    max-width: 800px;
+    grid-column: span 3;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
