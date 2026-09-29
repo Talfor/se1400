@@ -12,6 +12,17 @@ body {
     background-image: url("/images/mainbackground.jpg");
 }
 
+#finalBG {
+    object-fit: cover;
+    z-index: -2;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+}
+
 #featured .modlist li {
     position: relative;
     padding:1% 2% 25% 2%;
@@ -54,17 +65,18 @@ body {
     font-family: Arial, 
     sans-serif; 
     line-height: 1.6; 
-    margin: 0; 
+    margin: 0 auto 0 auto; 
     padding: 0; 
     background-color: #f4f4f9; 
     color: #333; 
+    max-width:60rem;
 }
 
 header { 
-    background: #026c99; 
+    background: none; 
     color: white;  
+    margin: 0 auto 0 auto; 
     text-align: center; 
-    background-image: url("/images/eclipsebackground.jpg");
     background-size: 100%;
     margin: 0;
     padding: 0; 
@@ -127,7 +139,10 @@ h2 {
 }
 
 footer { 
-    text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
+    text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; 
+    
+    margin: 0 auto 0 auto; 
+}
 
 nav a { 
     break-after: avoid; 
@@ -157,15 +172,17 @@ nav a:hover {
 }
 
 #banner, #description {
-    background-color: black;
-    background-image: url("/images/cosmicbackground.jpg");
-    background-size: cover;
+    background: none;
     color:lightcyan;
     text-shadow: 
        -2px -2px 0 #000,  
         2px -2px 0 #000,
        -2px  2px 0 #000,
         2px  2px 0 #000;
+}
+
+#description h2 {
+    color:white;
 }
 
 #banner {
@@ -175,6 +192,7 @@ nav a:hover {
 
 #banner h2 {
     grid-column: span 3;
+    color:white;
 }
 
 #banner #modlabels {
