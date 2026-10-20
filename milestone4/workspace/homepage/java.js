@@ -42,7 +42,7 @@ document.getElementById('version').addEventListener('change', function() {
     currentFileName = currentFileName.replace('.html', '');
          
     if (selectedVersion) {         
-        const newFileName = `/downloads/${currentFileName}/${currentFileName}-${selectedVersion}.txt`;
+        const newFileName = `../downloads/${currentFileName}/${currentFileName}-${selectedVersion}.txt`;
         downloadBtn.href = newFileName;         
         downloadBtn.setAttribute('download', newFileName);    
     } 
