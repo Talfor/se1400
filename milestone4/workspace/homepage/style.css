@@ -71,7 +71,7 @@ body {
 }
 
 header { 
-    background: linear-gradient(gray, white); 
+    background: gray; 
     color: white;  
     margin: 0 auto 0 auto; 
     text-align: center; 
