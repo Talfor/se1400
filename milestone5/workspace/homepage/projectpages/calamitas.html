@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Krameri Studios</title>
     <link rel="icon" type="image/x-icon" href="../../images/KrameriStudiosLogo.ico">
-    <link rel="stylesheet" href="../style.css"> <!-- CSS Link -->
-    <script src="../java.js" defer></script> <!-- JS Link -->
+    <link rel="stylesheet" href="../style.css">
+    <script src="../java.js" defer></script>
 </head>
+
 <body>
+
     <header>
         <video autoplay muted loop playsinline width="100%" id="finalBG" preload="auto">
             <source src="../../videos/infernum_background.mp4" type="video/mp4">
         </video>
         <img class="title" src="../../images/title.png" alt="Krameri Studios Title">
-        <nav><a href="../index.html">Home</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../about.html">About</a>
-        <a href="../support.html">Support</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../about.html">About</a>
+            <a href="../support.html">Support</a>
+        </nav>
     </header>
 
+    <!-- ===== Banner: gallery, status labels, description ===== -->
     <section id="banner" style="background-image: url('../../images/cragsbackground.png')">
         <h2>The Brimstone Witch, Supreme Calamitas</h2>
 
-            <section id="gallery">
-
-                <div class="container">
+        <section id="gallery">
+            <div class="container">
 
                 <div class="mySlides">
                     <div class="numbertext">1 / 6</div>
@@ -66,11 +71,12 @@
                 <div class="caption-container">
                     <p id="caption"></p>
                 </div>
-                </div>
 
-            </section><br>
+            </div>
+        </section>
+        <br>
 
-        <p id="modlabels"> 
+        <p id="modlabels">
             <br>
             Release Date: N/A<br>
             Last Update: N/A<br>
@@ -96,28 +102,28 @@
             This mod is designed to perfectly match the original fight. You can use the <a href="https://calamitymod.wiki.gg/wiki/Supreme_Witch,_Calamitas">Terraria Calamity Wiki</a> to see everything she does.<br>
             Includes the Brimstone Crags, unique ores and weapons, and drops from the boss. You can also choose difficulty upon summoning her.<br>
             <br>Disclaimer: Understand I do not support the controversial creator we have been forced to face right now. This mod is not made for him, but in respect for the other creators who have faced difficulty because of him.<br><br>
-            2nd Disclaimer: I am not an artist. The models, though my work, are not going to be crazy exceptional. Also, a lot of assets are taken from Calamity. I do intend to remake them as my own work eventually. Credit to the Calamity team for said assets & concepts.<br><br>
+            2nd Disclaimer: I am not an artist. The models, though my work, are not going to be crazy exceptional. Also, a lot of assets are taken from Calamity. I do intend to remake them as my own work eventually. Credit to the Calamity team for said assets &amp; concepts.<br><br>
             3rd Disclaimer: This mod is in beta. Optimization, balancing, and other tweaks are on the way.
         </p>
     </section>
 
+    <!-- ===== Download ===== -->
     <section id="download">
         <h2>Download</h2>
         <p><i>Remember to understand what you are downloading. This download is malware free, but you should always be sure either way.</i></p>
         <p>Download the .jar file and place it into your mods folder after installing Neoforge 26.1.2 for Minecraft.</p>
         Version:
         <select name="version" id="version">
-    <option value="" disabled selected>Select an option...</option>             
-    <option value="v0.0.22.5-77">v0.0.22.5-77</option>             
-    <option value="v0.0.22.5-32">v0.0.22.5-32</option>       
-</select> 
-
-<a id="download-button" download="primascape.txt">⬇️</a>
+            <option value="" disabled selected>Select an option...</option>
+            <option value="v0.0.22.5-77">v0.0.22.5-77</option>
+            <option value="v0.0.22.5-32">v0.0.22.5-32</option>
+        </select>
+        <a id="download-button" download="primascape.txt">⬇️</a>
     </section>
-    <section id="comments">
 
+    <!-- ===== Comments ===== -->
+    <section id="comments">
         <h2>Leave a Comment</h2>
-        <!-- The HTML Form -->
         <form action="javascript:void(0);" method="POST">
             <input type="text" name="username" placeholder="Your Name" required>
             <textarea name="comment_text" rows="4" placeholder="Write your comment here..." required></textarea>
@@ -129,12 +135,15 @@
         <h2>Comments</h2>
         <div class="comments-container" id="comments-container">
             <p>Loading comments...</p>
-    </div>
+        </div>
     </section>
+
     <footer>
         <img class="logo" src="../../images/KrameriStudiosLogo.png" alt="Krameri Studios Logo">
         <p>Krameri Studios &copy; Copyright 2026</p>
-        <p>talfor0001@outlook.com | 801-694-5737</p>
+        <p>talfor0001@outlook.com</p>
     </footer>
+
 </body>
+
 </html>
