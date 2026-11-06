@@ -129,6 +129,17 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#info {
+    margin-top: 0;
+    background: darkblue;
+    border-radius: 0px 0px 10px 10px;
+    & h2, p {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+}
+
 /* ----- Footer ----- */
 footer {
     text-align: center;
